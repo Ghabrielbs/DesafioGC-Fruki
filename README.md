@@ -10,7 +10,7 @@ Para rodar o backend da aplicação, siga os passos abaixo
 Instale o Java 21
 
 **Passo 2**
-
+Instale a interface do Docker https://docs.docker.com/desktop/setup/install/windows-install/
 Usando Docker, instale o banco de dados e configure o banco de dados Postgre e o pgAdmin usandos os comandos abaixo
 
 `docker network create fruki-network`

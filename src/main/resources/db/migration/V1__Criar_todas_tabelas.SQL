@@ -30,3 +30,14 @@ CREATE TABLE IF NOT EXISTS Tabela_Preco (
  preco_minimo NUMERIC(12,2)
 );
 
+CREATE TABLE IF NOT EXISTS Compra (
+  id_compra INTEGER PRIMARY KEY,
+  id_cliente INTEGER REFERENCES Cliente(id_cliente),
+  id_item INTEGER REFERENCES Item(id_item),
+  quantidade INTEGER NOT NULL CHECK (quantidade > 0),
+  data TIMESTAMP NOT NULL,
+
+  CONSTRAINT fk_compra_cliente FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+  CONSTRAINT fk_compra_item FOREIGN KEY (id_item) REFERENCES Item(id_item)
+);
+

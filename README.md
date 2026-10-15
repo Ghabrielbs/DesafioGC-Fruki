@@ -36,7 +36,7 @@ Clique em _Add New Server_ e insira as informações abaixo:
 *   Em Connection/Username: postgres
 *   Em Connection/Password: postgres
 
-### Caso dispare o Erro:
+### Caso dispare o Erro a seguir no Log do Intelij :
 
 ```
 SQL State  : 3000
@@ -45,8 +45,7 @@ Error Code : 0
 
 Message    : FATAL : banco de dados *fruki* não existe
 ```
-No Log do Intelij é porque tu tens um Postgres Local rodando no Windows, para paralo rode o seguinte comandono powershell:
-
+É porque tu tens um Postgres Local rodando no Windows, para para-lo rode o seguinte comando no powershell:
 
 `Stop-Service -Name postgresql-x64-17`
 

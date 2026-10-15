@@ -1,4 +1,4 @@
-## Tipo e descrição 
+# Tipo e descrição 
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -28,6 +28,8 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - `remove` - Commits do tipo remove indicam a exclusão de arquivos, diretórios ou funcionalidades obsoletas ou não utilizadas, reduzindo o tamanho e a complexidade do projeto e mantendo-o mais organizado.
 
+
+# 💻 Exemplos
 <table>
   <thead>
     <tr>

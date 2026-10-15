@@ -49,4 +49,30 @@ Message    : FATAL : banco de dados *fruki* não existe
 
 `Stop-Service -Name postgresql-x64-17`
 
+# Passo a Passo do desenvolvimento:
+
+```
+1 - Modelar PostgreSQL
+
+2 - Criar banco e inserir dados
+
+3 - Criar GET /cliente/{cnpj}
+
+4 - Integrar API de clima
+
+4 - Integrar API de agenda/feriados
+
+5 - Criar endpoint que envia infos pro databricks
+
+6 - Definir os dados de entrada do Databricks
+
+7 - Desenvolver/treinar recomendador(IA do databricks)
+
+8 - Criar endpoint Databricks → Backend
+
+9 - Criar no databricks  POST /recomendacoes
+
+10 - Integrar resultado com WhatsApp
+```
+
 

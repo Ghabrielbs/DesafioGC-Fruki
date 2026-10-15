@@ -41,3 +41,5 @@ CREATE TABLE IF NOT EXISTS Compra (
   CONSTRAINT fk_compra_item FOREIGN KEY (id_item) REFERENCES Item(id_item)
 );
 
+
+

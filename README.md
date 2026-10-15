@@ -23,7 +23,7 @@ Inicie o container do banco de dados e do pgAdmin
 
 **Passo 3**
 
-Configureo pgAdmin para acessar o bando de dados. 
+Configure o pgAdmin para acessar o bando de dados.
 
 Acesse no navegador o endereço [http://localhost:15432/login](http://localhost:15432/login). Use o email _admin@admin.com_ e a senha _admin._
 
@@ -35,4 +35,15 @@ Clique em _Add New Server_ e insira as informações abaixo:
 *   Em Connection/Maintenance database: fruki
 *   Em Connection/Username: postgres
 *   Em Connection/Password: postgres
+
+Caso dispare o Erro:
+-------------------------------------------
+SQL State  : 3000
+Error Code : 0
+Message    : FATAL : banco de dados *fruki* não existe
+----------------------------------------------
+No Log do Intelij é porque tu tens um Postgres Local rodando no Windows, para paralo rode o seguinte comandono powershell:
+
+`Stop-Service -Name postgresql-x64-17`
+
 

@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS Cliente (
- id_cliente INTEGER PRIMARY KEY,
+ id_cliente BIGINT PRIMARY KEY,
  cnpj VARCHAR(18),
  cod_segmento TEXT,
  cod_subsegmento TEXT,

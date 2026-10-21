@@ -10,7 +10,6 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
@@ -125,16 +124,12 @@ public class ClimaService {
         }
 
         return new ResumoClima(
-                latitude,
-                longitude,
-                resposta.timezone(),
-                "PREVISAO",
-                "°C",
-                Instant.now(),
-                dias.get(0).data(),
-                dias.get(QUANTIDADE_DIAS - 1).data(),
-                somaTemperaturas / QUANTIDADE_DIAS,
-                List.copyOf(dias)
+        "PREVISAO",
+        "°C",
+        dias.get(0).data(),
+        dias.get(QUANTIDADE_DIAS - 1).data(),
+        somaTemperaturas / QUANTIDADE_DIAS,
+        List.copyOf(dias)
         );
     }
 
@@ -217,15 +212,11 @@ public class ClimaService {
     ) {}
 
     public record ResumoClima(
-            double latitude,
-            double longitude,
-            String timezone,
-            String tipoDado,
-            String unidadeTemperatura,
-            Instant coletadoEm,
-            LocalDate inicio,
-            LocalDate fim,
-            double temperaturaMediaPeriodo,
-            List<DiaClima> dias
-    ) {}
+        String tipoDado,
+        String unidadeTemperatura,
+        LocalDate inicio,
+        LocalDate fim,
+        double temperaturaMediaPeriodo,
+        List<DiaClima> dias
+) {}
 }

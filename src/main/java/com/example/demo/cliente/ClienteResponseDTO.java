@@ -1,4 +1,4 @@
-package com.example.demo.cliente.dtos;
+package com.example.demo.cliente;
 
 public record ClienteResponseDTO(
         Long id,

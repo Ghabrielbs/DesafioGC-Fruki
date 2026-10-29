@@ -24,21 +24,14 @@ public class CentralizadorService {
 
     public CentralizadorRespostaDTO consultar(String cnpj) {
 
-        // 1. Busca o cliente pelo CNPJ
-        ClienteResponseDTO cliente =
-                clienteService.buscarCnpj(cnpj);
+        ClienteResponseDTO cliente = clienteService.buscarCnpj(cnpj);
 
-        // 2. Consulta o clima dos próximos dias
-        ClimaDoClienteDTO clima =
-                clienteClimaService.consultar(
+        ClimaDoClienteDTO clima = clienteClimaService.consultar(
                         cliente.cidade(),
                         cliente.estado(),
-                        cnpj
-                );
+                        cnpj );
 
-        // 3. Busca os eventos e feriados da região
-        List<EventoDTO> eventos =
-                feriadoService.getFeriadoByMunicipio(cliente);
+        List<EventoDTO> eventos = feriadoService.getFeriadoByMunicipio(cliente);
 
         // 4. Combina os resultados
         return new CentralizadorRespostaDTO(cliente, clima, eventos);

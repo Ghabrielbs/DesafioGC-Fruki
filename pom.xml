@@ -94,7 +94,13 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.databricks</groupId>
+            <artifactId>databricks-jdbc</artifactId>
+            <version>2.6.36</version> <!-- Use a versão mais recente disponível -->
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

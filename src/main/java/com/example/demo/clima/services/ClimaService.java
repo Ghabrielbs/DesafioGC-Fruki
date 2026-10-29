@@ -25,8 +25,8 @@ public class ClimaService {
     public ClimaService() {
         SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
 
-        factory.setConnectTimeout(5000);
-        factory.setReadTimeout(20000);
+        factory.setConnectTimeout(10_000);
+        factory.setReadTimeout(30_000);
 
         this.openMeteo = RestClient.builder()
                 .baseUrl("https://api.open-meteo.com")

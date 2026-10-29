@@ -1,7 +1,7 @@
 package com.example.demo.cliente;
 
 
-import com.example.demo.clima.dtos.ClimaDoCliente;
+import com.example.demo.clima.dtos.ClimaDoClienteDTO;
 import com.example.demo.clima.services.ClienteClimaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -26,9 +26,9 @@ public class ClienteController {
 
     //faz a previsão do clima buscando o cnpj
     @GetMapping("/clima/{id}")
-    public ResponseEntity<ClimaDoCliente> buscarClima(@PathVariable String cnpj) {
+    public ResponseEntity<ClimaDoClienteDTO> buscarClima(@PathVariable String cnpj) {
         ClienteResponseDTO cliente = clienteService.buscarCnpj(cnpj);
-        ClimaDoCliente previsao = clienteClimaService.consultar(cliente.cidade(), cliente.estado(), cliente.cnpj());
+        ClimaDoClienteDTO previsao = clienteClimaService.consultar(cliente.cidade(), cliente.estado(), cliente.cnpj());
 
         return ResponseEntity.ok(previsao);
     }

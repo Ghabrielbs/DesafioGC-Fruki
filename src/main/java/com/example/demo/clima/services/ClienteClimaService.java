@@ -1,6 +1,6 @@
 package com.example.demo.clima.services;
 
-import com.example.demo.clima.dtos.ClimaDoCliente;
+import com.example.demo.clima.dtos.ClimaDoClienteDTO;
 import com.example.demo.clima.dtos.Localizacao;
 
 import lombok.RequiredArgsConstructor;
@@ -15,7 +15,7 @@ public class ClienteClimaService {
     private final ClimaService climaService;
 
 
-    public ClimaDoCliente consultar(String CidadeCliente, String EstadoCliente, String cnpj) {
+    public ClimaDoClienteDTO consultar(String CidadeCliente, String EstadoCliente, String cnpj) {
 
         String cidade = CidadeCliente;
         String estado = EstadoCliente;
@@ -30,7 +30,7 @@ public class ClienteClimaService {
                 local.timezone()
         );
 
-        return new ClimaDoCliente(
+        return new ClimaDoClienteDTO(
                 cnpj,
                 cidade,
                 estado,

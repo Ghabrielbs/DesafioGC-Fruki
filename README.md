@@ -72,38 +72,3 @@ Message    : FATAL : banco de dados *fruki* não existe
 
 9 - Criar no databricks  POST /recomendacoes
 
-10 - Integrar resultado com WhatsApp
-```
-# Inicio do Front-end
-
-**Passo 1**
-
-Rode o seguinte comando com a pasta do front aberta no vsCode:
-`npm create vite@latest` 
-
-**Passo 2**
-
-De enter e espere carregar.
-
-**Passo 3**
-
-De um nome pro projeto: fruki
-
-**Passo 4**
-
-Escolha o frameWork: `React`
-
-**Passo 5**
-
-Escolha a linguagem: `JS`
-
-**Passo 6**
-
-Ele vai pedir para rodar uns comandos de enter e espere.
-
-**Passo 7**
-
-Agora só abrir o link que aparecer no terminal: Local:   `http://localhost:5173/`
-
-
-

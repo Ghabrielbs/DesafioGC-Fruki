@@ -1,9 +1,10 @@
 package com.example.demo.centralizador;
 
-import com.example.demo.cliente.ClienteResponseDTO;
+import com.example.demo.centralizador.dto.CentralizadorRespostaDTO;
+import com.example.demo.cliente.dto.ClienteResponseDTO;
 import com.example.demo.cliente.ClienteService;
-import com.example.demo.clima.dtos.ClimaDoClienteDTO;
-import com.example.demo.clima.services.ClienteClimaService;
+import com.example.demo.clima.dto.ClimaDoClienteDTO;
+import com.example.demo.clima.ClienteClimaService;
 import com.example.demo.feriado.FeriadoService;
 import com.example.demo.feriado.dto.EventoDTO;
 import lombok.RequiredArgsConstructor;

@@ -1,8 +1,8 @@
 
-package com.example.demo.clima.services;
+package com.example.demo.clima;
 
-import com.example.demo.clima.dtos.Localizacao;
-import com.example.demo.clima.dtos.RespostaGeocoding;
+import com.example.demo.clima.dto.Localizacao;
+import com.example.demo.clima.dto.RespostaGeocoding;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;

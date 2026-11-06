@@ -1,7 +1,7 @@
-package com.example.demo.clima.services;
+package com.example.demo.clima;
 
-import com.example.demo.clima.dtos.ClimaDoClienteDTO;
-import com.example.demo.clima.dtos.Localizacao;
+import com.example.demo.clima.dto.ClimaDoClienteDTO;
+import com.example.demo.clima.dto.Localizacao;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

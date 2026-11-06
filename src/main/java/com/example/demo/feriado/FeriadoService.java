@@ -1,14 +1,11 @@
 package com.example.demo.feriado;
 
-import com.example.demo.cliente.ClienteResponseDTO;
+import com.example.demo.cliente.dto.ClienteResponseDTO;
 import com.example.demo.feriado.dto.EventoDTO;
-import com.example.demo.feriado.dto.FeriadoDTO;
 import com.example.demo.feriado.dto.ResponseEventoDTO;
 import com.example.demo.feriado.dto.RespostaFeriadosDTO;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.text.Normalizer;
 import java.time.LocalDate;
@@ -66,12 +63,6 @@ public class FeriadoService {
                                 feriado.date()
                         ))
         ).toList();
-
-        if (eventos.isEmpty()){
-            throw new ResponseStatusException(HttpStatus
-                    .NOT_FOUND, "Não existem eventos ou feriados para este período.");
-
-        }
 
         return eventos;
     }

@@ -1,4 +1,4 @@
-package com.example.demo.clima.dtos;
+package com.example.demo.clima.dto;
 
 public record ClienteLocal(
     String cidade,

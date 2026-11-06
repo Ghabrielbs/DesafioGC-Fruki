@@ -1,5 +1,5 @@
 
-package com.example.demo.clima.dtos;
+package com.example.demo.clima.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

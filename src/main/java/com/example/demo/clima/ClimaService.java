@@ -1,4 +1,4 @@
-package com.example.demo.clima.services;
+package com.example.demo.clima;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

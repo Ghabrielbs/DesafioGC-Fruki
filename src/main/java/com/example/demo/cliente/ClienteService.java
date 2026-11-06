@@ -1,5 +1,6 @@
 package com.example.demo.cliente;
 
+import com.example.demo.cliente.dto.ClienteResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
